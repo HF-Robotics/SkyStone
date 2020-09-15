@@ -41,7 +41,7 @@ import java.util.concurrent.TimeUnit;
 
 import lombok.NonNull;
 
-@Autonomous(name="VV Auto")
+@Autonomous(name="VV Auto Real")
 @Disabled
 @SuppressWarnings("unused")
 public class VelocityVortexBeacons extends VelocityVortexHardware {

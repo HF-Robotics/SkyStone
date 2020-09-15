@@ -1,12 +1,10 @@
 package com.hfrobots.tnt.fakes.sensors;
 
-import android.support.annotation.NonNull;
 
 import com.qualcomm.hardware.bosch.BNO055IMU;
 import com.qualcomm.robotcore.hardware.HardwareDevice;
 
 import org.firstinspires.ftc.robotcore.external.navigation.Acceleration;
-import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
 import org.firstinspires.ftc.robotcore.external.navigation.AngularVelocity;
 import org.firstinspires.ftc.robotcore.external.navigation.AxesOrder;
 import org.firstinspires.ftc.robotcore.external.navigation.AxesReference;
@@ -26,13 +24,12 @@ public class FakeBNO055IMU implements BNO055IMU, HardwareDevice {
     }
 
     @Override
-    public boolean initialize(@NonNull Parameters parameters) {
+    public boolean initialize(Parameters parameters) {
         this.parameters = parameters;
 
         return true;
     }
 
-    @NonNull
     @Override
     public Parameters getParameters() {
         return parameters;

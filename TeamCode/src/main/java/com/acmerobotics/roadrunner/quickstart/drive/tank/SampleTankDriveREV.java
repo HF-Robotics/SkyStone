@@ -1,7 +1,5 @@
 package com.acmerobotics.roadrunner.quickstart.drive.tank;
 
-import android.support.annotation.NonNull;
-
 import com.acmerobotics.roadrunner.control.PIDCoefficients;
 import com.qualcomm.hardware.bosch.BNO055IMU;
 import com.qualcomm.robotcore.hardware.DcMotor;
@@ -13,6 +11,8 @@ import com.acmerobotics.roadrunner.quickstart.util.LynxModuleUtil;
 
 import java.util.Arrays;
 import java.util.List;
+
+import lombok.NonNull;
 
 import static com.acmerobotics.roadrunner.quickstart.drive.DriveConstants.encoderTicksToInches;
 
