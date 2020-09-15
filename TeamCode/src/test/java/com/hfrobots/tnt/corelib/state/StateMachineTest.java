@@ -278,6 +278,11 @@ public class StateMachineTest extends TestCase {
         }
 
         @Override
+        public void setDisplayFormat(DisplayFormat displayFormat) {
+
+        }
+
+        @Override
         public Log log() {
             return null;
         }

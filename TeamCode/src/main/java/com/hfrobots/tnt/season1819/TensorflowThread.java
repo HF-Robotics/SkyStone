@@ -93,11 +93,7 @@ public class TensorflowThread extends Thread {
         // first.
         initVuforia();
 
-        if (ClassFactory.getInstance().canCreateTFObjectDetector()) {
-            initTfod();
-        } else {
-            Log.d(LOG_TAG,"Sorry!, this device is not compatible with TFOD");
-        }
+        initTfod();
     }
 
     @Override

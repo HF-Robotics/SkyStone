@@ -19,9 +19,6 @@
 
 package com.hfrobots.tnt.fakes;
 
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-
 import com.google.common.collect.Maps;
 import com.hfrobots.tnt.corelib.util.SimplerHardwareMap;
 import com.qualcomm.robotcore.hardware.HardwareDevice;
@@ -31,6 +28,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+
+import javax.annotation.Nullable;
 
 public class FakeHardwareMap implements SimplerHardwareMap {
     Map<String, HardwareDevice> deviceMap = Maps.newHashMap();
@@ -78,7 +77,7 @@ public class FakeHardwareMap implements SimplerHardwareMap {
         return result;
     }
 
-    public @NonNull Set<String> getNamesOf(HardwareDevice device) {
+    public Set<String> getNamesOf(HardwareDevice device) {
         String result = this.deviceNames.get(device);
 
         if (result == null) {

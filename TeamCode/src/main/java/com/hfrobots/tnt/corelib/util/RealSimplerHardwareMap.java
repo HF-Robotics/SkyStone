@@ -19,9 +19,6 @@
 
 package com.hfrobots.tnt.corelib.util;
 
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-
 import com.qualcomm.robotcore.hardware.HardwareDevice;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
@@ -29,6 +26,7 @@ import java.util.List;
 import java.util.Set;
 
 import lombok.AllArgsConstructor;
+import lombok.NonNull;
 
 @AllArgsConstructor
 public class RealSimplerHardwareMap implements SimplerHardwareMap {
@@ -55,7 +53,7 @@ public class RealSimplerHardwareMap implements SimplerHardwareMap {
     }
 
     @Override
-    public boolean equals(@Nullable Object obj) {
+    public boolean equals(Object obj) {
         return realMap.equals(obj);
     }
 

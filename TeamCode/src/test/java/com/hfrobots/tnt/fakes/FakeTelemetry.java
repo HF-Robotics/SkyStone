@@ -156,6 +156,11 @@ public class FakeTelemetry implements Telemetry {
     }
 
     @Override
+    public void setDisplayFormat(DisplayFormat displayFormat) {
+
+    }
+
+    @Override
     public Log log() {
         return null;
     }
